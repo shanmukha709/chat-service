@@ -10,7 +10,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/chat")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "https://our-circle-ui.onrender.com",
+        "http://localhost:3000"
+})
 public class ChatController {
 
     @Autowired
